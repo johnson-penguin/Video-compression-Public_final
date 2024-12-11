@@ -23,7 +23,10 @@ if __name__ == "__main__":
     pcap_file = 'free5gc_oaiGNB_oaiUE.pcap'  # 請使用正確的檔案路徑
     
     # 假設你有一個封包編號的矩陣
-    packet_numbers = [103, 107, 344, 349, 357, 359, 368, 372, 392, 409, 413, 439, 1015, 1017, 1025, 1037]  # 封包編號矩陣
+    # packet_numbers = [103, 107, 344, 349, 357, 359, 368, 372, 392, 409, 413, 439, 1015, 1017, 1025, 1037]  # 封包編號矩陣
+    packet_numbers1 = [103, 107, 344, 349, 357]
+    packet_numbers2 = [359, 368, 372, 392, 409]
+    packet_numbers3 = [413, 439, 1015, 1017, 1025, 1037]  # 封包編號矩陣
 
     # 提取這些封包的原始資料
-    extract_raw_packets(pcap_file, packet_numbers)
+    extract_raw_packets(pcap_file, packet_numbers1)
